@@ -1,0 +1,5 @@
+{
+  "name": "Interactive 3D Brain Explorer",
+  "description": "A realistic and interactive 3D model of the human brain with clickable regions and detailed information.",
+  "requestFramePermissions": []
+}

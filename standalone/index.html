@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Brain Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="logo">
+                <span class="icon">🧠</span>
+                <h1>Cerebro<span>3D</span></h1>
+            </div>
+            <p>Interactive Human Brain Explorer</p>
+        </header>
+
+        <div id="canvas-container"></div>
+
+        <div id="info-panel" class="hidden">
+            <button id="close-btn">&times;</button>
+            <div class="content">
+                <h2 id="region-name">Frontal Lobe</h2>
+                <div class="badge">Overview</div>
+                <p id="region-desc">Description goes here...</p>
+                <div class="divider"></div>
+                <h3>Key Functions</h3>
+                <ul id="region-functions">
+                    <li>Function 1</li>
+                    <li>Function 2</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="controls-hint">
+            <p>🖱️ Click to select | 🔄 Drag to rotate | 🔍 Scroll to zoom</p>
+        </div>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls": "https://unpkg.com/three@0.160.0/examples/jsm/controls/OrbitControls.js"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
